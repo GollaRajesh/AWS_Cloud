@@ -1,8 +1,12 @@
-Outbound: private subnet--> RT(Private) --> Nat Gateway --> IGW --> Internet
+**Outbound**: ** private subnet--> RT(Private) --> Nat Gateway --> IGW --> Internet**
+
+
 	The requiest before going to Nat gate way , the RT decided to where its sends the traffic.
  	Internet doensn't know the private IP address, so the NAT Gateway mask(rechange) the private IP 
 
-Inbound: Internet --> IGW --> RT (Public) ---> Public Subnet (LB or Bastion Host) --> RT (Private) --> Private Subnet
+
+**Inbound**: **Internet --> IGW --> RT (Public) ---> Public Subnet (LB or Bastion Host) --> RT (Private) --> Private Subnet**
+
 	here, NAT Gateway also only outbound traffic, its doesnt allow the inbound traffic, so that the traffic will not go throug the NAT Gateway.
  
 AWS Project based on Load Balncer:-
