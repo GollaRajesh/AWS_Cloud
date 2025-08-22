@@ -1,5 +1,5 @@
-**Outbound**: ** private subnet--> RT(Private) --> Nat Gateway --> IGW --> Internet**
-
+**Outbound:  private subnet--> RT(Private) --> Nat Gateway --> IGW --> Internet
+**
 
 	The requiest before going to Nat gate way , the RT decided to where its sends the traffic.
  	Internet doensn't know the private IP address, so the NAT Gateway mask(rechange) the private IP 
